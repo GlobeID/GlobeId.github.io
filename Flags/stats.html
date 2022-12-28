@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.46.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+
+  <div class="navbar bg-base-100">
+    <div class="flex-1">
+      <a href="./index.html" class="btn btn-ghost normal-case text-xl">WorldID Flags</a>
+    </div>
+    <div class="flex-none gap-2">
+      <div class="form-control">
+        <input id="search" type="text" placeholder="SEARCH INVALID" class="input input-bordered" disabled/>
+      </div>
+      <div class="dropdown dropdown-end">
+        <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+          <div class="w-10 rounded-full">
+            <img src="./Flags/logo.jpg" />
+          </div>
+        </label>
+        <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+          <li>
+            <a class="justify-between">
+              Profile
+              <span class="badge">New</span>
+            </a>
+          </li>
+          <li><a>Settings</a></li>
+          <li><a>Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex;justify-content:center;">
+
+  <div style="margin: 15px;" class="stats shadow">
+  
+    <div class="stat">
+      <div class="stat-figure text-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+      </div>
+      <div class="stat-title">Top Likes In Dec So Far</div>
+      <div class="stat-value text-primary">2</div>
+      <div class="stat-desc">大熊猫#0291</div>
+    </div>
+    
+    <div class="stat">
+      <div class="stat-figure text-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+      </div>
+      <div class="stat-title">Most Recent Upload</div>
+      <span class="textarea textarea-primary"><a href="./Flags/index.jpg">DOWNLOAD</a></span>
+      <div class="stat-desc">UnitedCoding#2736</div>
+    </div>
+    
+    <div class="stat">
+      <div class="stat-figure text-secondary">
+        <div class="avatar online">
+          <div class="w-16 rounded-full">
+            <img src="https://cdn.discordapp.com/avatars/872279104811069450/5f50e4dce5a2d15033e6d0480f39a1c7.webp?size=128" />
+          </div>
+        </div>
+      </div>
+      <div class="stat-value">14 Flags</div>
+      <div class="stat-title">Uploaded In December</div>
+      <div class="stat-desc text-secondary">大熊猫#0291</div>
+    </div>
+    
+  </div>
+  </div>
+
+  <div class="btm-nav">
+    <button class="text-primary">
+      <a href="./index.html" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg></a>
+    </button>
+    <button class="text-primary">
+      <a href="./info.html" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></a>
+    </button>
+    <button class="text-primary active">
+      <a href="./stats.html" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg></a>
+    </button>
+  </div>
+
+  <style>
+    * {
+      overflow: scroll;
+    }
+
+    body {
+      --tw-bg-opacity: 1;
+      background-color: hsl(var(--n)/var(--tw-bg-opacity));
+      min-height: 100vh;
+      height: 100%;
+      height: 100%;
+    }
+
+    .go-away {
+      display: none !important;
+    }
+
+    .body {
+        display: flex;
+    }
+  </style>
+
+</body>
+
+</html>
